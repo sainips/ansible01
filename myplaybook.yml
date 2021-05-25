@@ -16,3 +16,8 @@
      apt:
       name: tree
       state: present  
+   - name: i wnat to install git
+     apt:
+       name: git
+       state: present
+       
