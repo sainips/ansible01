@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.15.39 
+- hosts: all 
   become: yes
   tasks:
    - name: install git
@@ -9,4 +9,4 @@
      loops:
      - git
      - tree
-     - wget
+     - wget   
