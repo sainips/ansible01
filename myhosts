@@ -1,2 +1,8 @@
+
+[[mywebservers]]
 172.31.15.39
 172.31.29.199 
+
+[mywebservers:vars]
+mywebpackageforubunntu= apache2
+mywebpackageforredhat= httpd
