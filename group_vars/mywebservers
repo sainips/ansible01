@@ -1,0 +1,6 @@
+
+mywebpackageforubuntu: apache2
+mywebpackageforredhat: httpd
+
+myjavapacakgeonubuntu: openjdk-8-jre
+myjavapacakgeonredhat: java-1.8.0-openjdk
