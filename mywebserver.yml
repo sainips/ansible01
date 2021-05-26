@@ -11,5 +11,5 @@
    - name: i want to install webserver on redhat node only
      yum:
       name: httdp
-      state: present
+      state: changed 
      when: ansible_os_family=="RedHat"  
