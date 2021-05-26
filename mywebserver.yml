@@ -10,6 +10,6 @@
 
    - name: i want to install webserver on redhat node only
      yum:
-      name: httdp
+      name: http
       state: present 
      when: ansible_os_family=="RedHat"  
