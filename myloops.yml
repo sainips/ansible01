@@ -2,11 +2,11 @@
 - hosts: all 
   become: yes
   tasks:
-  - name: install git
-    apt:
+   - name: install git
+     apt:
       name: "{{ item }}"
       state: present
-    loops:
-    - git
-    - tree
-    - wget
+     loops:
+     - git
+     - tree
+     - wget
