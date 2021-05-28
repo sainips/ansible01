@@ -1,10 +1,11 @@
+
 ---
- - hosts: mywebservers
-   become: yes
-   task:
-    - name: i want to execute the linux command diretly
-      command: hostname
-      register: myresults
-    - name: i want to display my result
-      debug:
-        msg: "{{myresults}}"
+- hosts: 172.31.15.39 
+  become: yes
+  tasks:
+  - name: i want to execute linux command directly
+    command: hostname
+    register: myresult
+  - name: i want to display myresult
+    debug:
+      msg: "{{myresult}}"
