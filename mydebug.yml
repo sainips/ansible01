@@ -6,18 +6,20 @@
   - name: i want to execute linux command directly
     command: hostname
     register: myresult
+
   - name: i want to display myresult
     debug:
       msg: "{{myresult}}"
+
   - name: i wnat to install git
     apt:
       name: git
       state: present
-    when: myresults.stderr =="" 
+    when: myresult.stderr ==""
+     
   - name: i wnat to install tree
     apt:
       name: tree
       state: present
-    when: myresults.stderr !=""
+    when: myresult.stderr !=""
 
-    
