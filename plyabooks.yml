@@ -1,0 +1,13 @@
+---
+ - hosts: mywebservers
+   become: yes
+   vars:
+     myvars01: git
+     myvars02: tree
+     myvars03: wget
+   tasks:
+     - name: i want to display myvars01 value
+       debug:
+        msg:"{{myvars01}}"
+
+        
