@@ -6,7 +6,7 @@
      apt:
       name: git
       statee: present
-   - ignore_errors: yes
+      ignore_errors: yes
      
    - name: i wnat to install tree
      apt:
