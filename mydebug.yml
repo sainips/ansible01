@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.15.39
+- hosts: mywebservers
   become: yes
   task:
     - name: i want to execute the linux command diretly
