@@ -1,0 +1,5 @@
+
+- name: i want to create a ffile on ansible nord
+  file:
+      path: /home/ubuntu/test.text
+      state: touch
