@@ -10,11 +10,12 @@
       state: present
 
    - name: i want to install webserver
-     apt:
+     service:
       name: apache2
-      state: present   
+      state: started   
    - name: i want to copy myindex.j2 into nodesite
      template:
       src: myindex.j2
-      dest: var/www/html/index.html  
+      dest: var/www/html/index.html
+
   
